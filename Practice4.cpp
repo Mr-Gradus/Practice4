@@ -1,6 +1,7 @@
 ﻿#include <iostream>
 #include <vector>
 #include <locale>
+#include <set>
 #include <string>
 #include <cassert>
 #include <algorithm>
@@ -14,18 +15,8 @@ using namespace std;
 
 //=================Task_2=====================
 
-/*
-void print(vector<int>& v) {
-	for (int i = 0; i < v.size(); i++) {
-		cout << v[i] << " ";
-	}
-	cout << endl;
 
 
-
-vector<int> v{ 13, 6, 456, -567, 38, 9, 13 };
-
-*/
 
 //=================Task_3=====================
 
@@ -66,19 +57,10 @@ int main()
 
 	cout << endl << "==========Task 2==========" << ".\n" << endl;
 
-	/*v.push_back(7);
-	v.pop_back();
-	cout << v.empty() << endl;
-	print(v);*/
-	/*
-	vector<int>::iterator it;
-	it = v.begin();
-	cout << *it << endl;
-
-	sort(v.begin(), v.end());
-	print(v);
-	*/
-	//=================Task_3=====================
-	cout << endl << "==========Task 3==========" << ".\n" << endl;
+	vector<int> val = { 13, 7, 13, 13, 13, 13, 13, 63, 13, 13, 13, 13, 38, 13 };
+	set<int> dif(val.begin(), val.end());
+	cout << dif.size() << " различных значений из " << val.size() << endl;
+	
+	
 }
 
